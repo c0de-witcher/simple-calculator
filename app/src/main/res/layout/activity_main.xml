@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:inputType="numberDecimal"
+        android:textColor="@color/pink"
+        android:hint="Enter input 1"
+        android:textColorHint="@color/black"
+        android:textStyle="bold">
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input2"
+            android:textColor="@color/pink"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter input 2"
+            android:inputType="numberDecimal"
+            android:layout_margin="20dp"
+            android:textColorHint="@color/black"
+            android:textStyle="bold">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="20dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp">
+
+    </TextView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/pink"
+        app:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pink"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:layout_width="150dp"
+                    android:id="@+id/plus"
+                    android:layout_height="match_parent"
+                    android:text="PLUS"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp">
+
+                </Button>
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="MINUS"
+                    android:id="@+id/minus"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp">
+
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="DIVIDE"
+                    android:id="@+id/divide"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp">
+
+                </Button>
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="MULTIPLE"
+                    android:id="@+id/multiple"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp">
+
+                </Button>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
